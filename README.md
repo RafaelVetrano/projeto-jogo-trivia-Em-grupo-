@@ -61,7 +61,7 @@ Nesse projeto, você será capaz de:
   
   * Este projeto é em grupo;
   * São `5` dias de projeto;
-  * Data para entrega final do projeto: `11/07/2022 14:00`.
+  * Data para entrega final do projeto: `11/07/2022 14:10`.
 
 </details>
 
