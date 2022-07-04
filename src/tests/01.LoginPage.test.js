@@ -49,8 +49,16 @@ describe('Página de Login', () => {
     expect(playButton).toBeEnabled();
   });
 
+  it('deve estar desabilitado o botão "Play" ao iniciar a aplicação', () => {	
+    renderWithRouterAndRedux(<Login />);
+
+    const playButton = screen.getByText(/play/i);
+    
+    expect(playButton).toBeDisabled();
+  });
+
   it('deve ser redirecionada à página de jogo ao clicar em Play', () => {
-    const { history } = renderWithRouterAndRedux(<Login />, INITIAL_STATE, '/game');
+    const { history } = renderWithRouterAndRedux(<Login />, {}, '/game');
 
     const inputEmail = screen.getByPlaceholderText(/exemplo@hotmail.com/i);
     const inputName = screen.getByPlaceholderText(/digite seu nome/i);
@@ -61,6 +69,16 @@ describe('Página de Login', () => {
     userEvent.click(playButton);
 
     expect(history.location.pathname).toBe('/game');
+  });
+
+  it('deve ser redirecionada à página de Configurações ao clicar em Configurações', () => {
+    const { history } = renderWithRouterAndRedux(<Login />, {}, '/settings');
+
+    const playSettings = screen.getByText(/Configurações/i);
+    
+    userEvent.click(playSettings);
+
+    expect(history.location.pathname).toBe('/settings');
   });
 
   it('Teste se a função fecth é chamada', () => {
