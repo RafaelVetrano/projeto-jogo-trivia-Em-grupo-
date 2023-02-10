@@ -4,12 +4,14 @@
 
 # Como inicar
 
-clone o repositorio no vs code 
+<strong>clone o repositorio no vs code<strong>
 
 `git clone git@github.com:RafaelVetrano/projeto-jogo-trivia-Em-grupo-.git`
 
-instale os pacotes do node 
+<strong>instale os pacotes do node<strong>
+
 `npm install`
     
-inicie o projeto
+<strong>inicie o projeto<strong>
+
 `npm start`
