@@ -4,7 +4,7 @@
 
 # Como inicar
 
-<strong>clone o repositorio no vs code<strong>
+<strong>clone o repositorio<strong>
 
 `git clone git@github.com:RafaelVetrano/projeto-jogo-trivia-Em-grupo-.git`
 
